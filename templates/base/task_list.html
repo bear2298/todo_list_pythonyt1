@@ -10,6 +10,13 @@
      <a href="{% url 'logout' %}">logout</a>
     to do list {{ context.color }}
     <a href="{% url 'task-create' %}">create task </a>
+
+    <form method="get">
+        <input type="text" name="search-area">
+        <input type="submit" value="search">
+
+    </form>
+
     <table>
         <tr>
             <th>Item</th>
