@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+{% load pwa%}
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    {% progressive_web_app_meta %}
 </head>
 <body>
 {% if request.user.is_authenticated %}

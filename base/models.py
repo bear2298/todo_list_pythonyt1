@@ -11,9 +11,9 @@ class Task(models.Model):
     price = models.FloatField(default=69, null=True, blank=True)
 
     def __str__(self):
-        return self.title
+        return self.create
 
     class Meta:
-        ordering=['complete']
+        ordering = ['-create']
 
 

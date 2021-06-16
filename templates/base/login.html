@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+{% load pwa%}
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    {% progressive_web_app_meta %}
 </head>
 <body>
+
     <h1>login</h1>
     <form method="post">
         {% csrf_token %}

@@ -23,9 +23,7 @@ class LoginV(LoginView):
         return reverse_lazy('tasks')
 
 class RegisterPage(FormView):
-    template_name = 'base/register.html'
-    form_class = UserCreationForm
-    redirect_authenticated_user = True
+
     success_url = reverse_lazy('tasks')
 
     def form_valid(self, form):
